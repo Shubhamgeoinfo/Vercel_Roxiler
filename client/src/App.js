@@ -9,6 +9,7 @@ import Pagination from "./components/pagination/pagination";
 import { CardBox } from "./components/card/card";
 import BarChart from "./components/graph/graph";
 import PieChart from "./components/graph/pieChart";
+const apiDomain = "https://vercel-roxiler-api-git-main-shubham-kumars-projects-a277b10a.vercel.app"
 
 function App() {
   const [search, setSearch] = useState("");
@@ -35,13 +36,13 @@ function App() {
     }
   };
   useEffect(() => {
-    axios.get(`/month/${month}?search=${search}&page=${pageNo}`).then((res) => {
+    axios.get(`${apiDomain}/month/${month}?search=${search}&page=${pageNo}`).then((res) => {
       setTableData(res.data.data);
       setTotalRecordCount(
         res.data.totalCount.length ? res.data.totalCount[0].count : 0
       );
     });
-    axios.get(`/all/${month}`).then((res) => {
+    axios.get(`${apiDomain}/all/${month}`).then((res) => {
       setStatsData(res.data.statsData);
       setBarData(res.data.barData);
       setPieData(res.data.pieData);
