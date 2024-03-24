@@ -1,0 +1,16 @@
+.big {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.transaction {
+    height: 170px;
+    width: 170px;
+    border-radius: 100%;
+    background-color: white;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

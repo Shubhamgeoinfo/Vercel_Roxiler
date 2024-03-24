@@ -1,0 +1,40 @@
+.App {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    background-color: cyan;
+    padding: 20px;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-left: 60px;
+    margin-right: 60px;
+    width: 100%;
+}
+
+.table-data {
+    height: 400px;
+    overflow-y: scroll;
+}
+
+.pagination {
+    width: 100%;
+}
+
+.card-container {
+    width: 40%;
+}
+
+.stats-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-bottom: 30px;
+    padding: 20px;
+
+}

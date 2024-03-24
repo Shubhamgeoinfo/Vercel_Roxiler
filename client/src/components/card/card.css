@@ -1,0 +1,12 @@
+.card-wrapper {
+    width: 30vw;
+    padding: 20px;
+}
+
+.card-text-wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    font-size: large;
+    font-weight: 500;
+}
