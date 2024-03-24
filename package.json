@@ -2,12 +2,12 @@
   "name": "roxiler",
   "version": "1.0.0",
   "description": "mern stack app",
-  "main": "server.js",
+  "main": "index.js",
   "type":"module",
   "scripts": {
     "vercel-build": "echo hello",
-    "start": "node server.js",
-    "server": "nodemon server.js"
+    "start": "node index.js",
+    "server": "nodemon index.js"
   },
   "keywords": [
     "MongoDB",
